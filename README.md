@@ -1,7 +1,5 @@
 # Bugs’ HTML 5 Skeleton
-- author:		Jiri Zajic
-- nickname:	Bugs Buny
-- email:		jiri.zajic@mensa.cz
+- author:		Bugs Bunny
 - date:			2014/10/09
 
 ## Libraries
