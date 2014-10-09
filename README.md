@@ -1,6 +1,7 @@
 # Bugs’ HTML 5 Skeleton
 - author:		Jiri Zajic
-- email:		jiri.zajic@flipcom.cz
+- nickname:	Bugs Buny
+- email:		jiri.zajic@mensa.cz
 - date:			2014/10/09
 
 ## Libraries
@@ -19,4 +20,3 @@
 - HTML 5 valid
 - IE only CSS
 - IE8- only CSS
-- 
