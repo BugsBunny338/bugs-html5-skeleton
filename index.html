@@ -198,37 +198,43 @@
       $(document).foundation();
 
       // anchor jscript scroll
-      $('a[href^=#]').click(function(i, el) {
-        var anchorId = $(this).attr('href').substr(1),
-          body = $("body");
-        body.animate({
-          scrollTop: $('#' + anchorId).offset().top
-        }, 400, 'swing', function() { /*callback*/ });
-        return false;
-      });
+      (function($) {
+        $('a[href^=#]').click(function(i, el) {
+          var anchorId = $(this).attr('href').substr(1),
+            body = $("body");
+          body.animate({
+            scrollTop: $('#' + anchorId).offset().top
+          }, 400, 'swing', function() { /*callback*/ });
+          return false;
+        });
+      })(jQuery);
 
-      // if (!Modernizr.touch)
-      // if (!Modernizr.touch && false)
-      // {
-      //   var head = document.getElementsByTagName('head')[0],
-      //       link = document.createElement('link');
-      //   link.rel = 'stylesheet';
-      //   link.type = 'text/css';
-      //   link.href = 'css/jquery.fullPage.css';
-      //   head.appendChild(link);
+      // (function($) {
+      //   if (!Modernizr.touch)
+      //   if (!Modernizr.touch && false)
+      //   {
+      //     var head = document.getElementsByTagName('head')[0],
+      //         link = document.createElement('link');
+      //     link.rel = 'stylesheet';
+      //     link.type = 'text/css';
+      //     link.href = 'css/jquery.fullPage.css';
+      //     head.appendChild(link);
 
-      //   $('#fullpage').fullpage({
-      //     scrollingSpeed: 700,
-      //     easing: 'easeInQuart',
-      //     verticalCentered: true,
-      //     resize: false,
-      //     anchors: [ ]
+      //     $('#fullpage').fullpage({
+      //       scrollingSpeed: 700,
+      //       easing: 'easeInQuart',
+      //       verticalCentered: true,
+      //       resize: false,
+      //       anchors: [ ]
+      //     });
+      //   }
+      // })(jQuery);
+
+      // (function($) {
+      //   $('#fullpage').slimScroll({
+      //     height: '1000px !important'
       //   });
-      // }
-
-      // $('#fullpage').slimScroll({
-      //   height: '1000px !important'
-      // });
+      // })(jQuery);
 
     </script>
   </body>
