@@ -13,11 +13,14 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- top-bar breakpoint set to large; created by SASS -->
-    <!-- http://truthyfalsey.com/foundation-5-top-bar-breakpoint/ -->
-    <!-- http://foundation.zurb.com/docs/sass.html -->
-    <!-- <link rel="stylesheet" type="text/css" href="{$basePath}/css/app.css" />  -->
+    <!--
+      http://truthyfalsey.com/foundation-5-top-bar-breakpoint/
+      http://foundation.zurb.com/docs/sass.html
+    -->
+    <!-- <link rel="stylesheet" type="text/css" href="{$basePath}/css/app.css" /> -->
+
     <!-- top-bar breakpoint default by Foundation -->
-    <link rel="stylesheet" type="text/css" href="css/foundation.css" />
+    <link rel="stylesheet" type="text/css" href="{$basePath}/css/foundation.css" />
     
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
     <link rel="stylesheet" type="text/css" href="css/tablet.css" />
@@ -197,13 +200,14 @@
 
     </div>
 
-    <footer>Stick to bottom!</footer>
+    <div class="row">
+      <footer>2015 &copy; <a href="http://www.flipcom.cz" alt="Flipcom - IT Advisory">Flipcom - IT Advisory</footer>
+    </div>
     
     <script type="text/javascript" src="js/vendor/jquery.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/foundation.min.js"></script>
     <script type="text/javascript">
 
@@ -240,9 +244,9 @@
       //   }
       // })(jQuery);
 
-      $('#fullpage').slimScroll({
-        height: '1000px !important'
-      });
+      // $('#fullpage').slimScroll({
+      //   height: '1000px !important'
+      // });
 
     </script>
   </body>
